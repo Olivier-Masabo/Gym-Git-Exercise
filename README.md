@@ -293,3 +293,62 @@ $ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 ```
+
+## Bundle 2
+### Exercise 1
+```bash
+Tech Heaven Shop@Mufasa MINGW64 ~/Myproj-2 (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+Tech Heaven Shop@Mufasa MINGW64 ~/Myproj-2 (ft/bundle-2)
+$ git status
+On branch ft/bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        service.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tech Heaven Shop@Mufasa MINGW64 ~/Myproj-2 (ft/bundle-2)
+$ git add --all
+
+Tech Heaven Shop@Mufasa MINGW64 ~/Myproj-2 (ft/bundle-2)
+$ git commit -m "add service page"
+[ft/bundle-2 4edd0f9] add service page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 service.html
+
+Tech Heaven Shop@Mufasa MINGW64 ~/Myproj-2 (ft/bundle-2)
+$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Tech Heaven Shop@Mufasa MINGW64 ~/Myproj-2 (ft/bundle-2)
+$  git push --set-upstream origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 464 bytes | 232.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Olivier-Masabo/Gym-Git-Exercise/pull/new/ft/bundle-2
+remote:
+To https://github.com/Olivier-Masabo/Gym-Git-Exercise.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+Tech Heaven Shop@Mufasa MINGW64 ~/Myproj-2 (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
